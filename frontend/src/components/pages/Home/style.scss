@@ -1,0 +1,62 @@
+.main-block {
+  padding: 40px 0;
+  &__container {
+  }
+
+  &__top {
+    margin-bottom: 24px;
+  }
+
+  &__top-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+  }
+
+  &__body {
+  }
+
+  &__load-items {
+    text-align: center;
+  }
+
+  &__none-items {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__item {
+  }
+
+  &__just {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__bottom {
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__show-more-button {
+  }
+}

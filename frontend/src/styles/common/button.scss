@@ -1,0 +1,41 @@
+.button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  // line-height: 29px;
+  // line-height: math.div(29, 24);
+  padding: 12px 24px;
+  color: #fff;
+  text-align: center;
+  background-color: #0085ff;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #0263bd;
+    }
+  }
+
+  &:active {
+    scale: 0.96;
+  }
+
+  &_border {
+    background-color: transparent;
+    border: 2px solid #0085ff;
+    color: #000;
+    border-radius: 16px;
+    transition: all 0.3s ease 0s;
+    padding: 12px 24px;
+    cursor: pointer;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+  &._fw {
+    width: 100%;
+  }
+}

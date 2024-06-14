@@ -1,0 +1,69 @@
+@use 'sass:math';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import 'base/null';
+
+body {
+  font-family: 'Inter', 'sans-serif';
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  .loaded & {
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  > main {
+    flex: 1 1 auto;
+  }
+
+  > * {
+    min-width: 0;
+  }
+}
+
+[class*='__container'] {
+  margin: 0 auto;
+  box-sizing: content-box;
+  max-width: 1440px;
+  padding: 0 15px;
+}
+
+@import 'common/button';
+@import 'common/input';
+
+.my-button-class {
+  button {
+    background-color: #fff;
+    color: blue;
+
+    svg {
+      path {
+        fill: currentColor !important;
+      }
+    }
+
+    div {
+      color: blue;
+    }
+  }
+}
+
+.just {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: flex-start;
+}

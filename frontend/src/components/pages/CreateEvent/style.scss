@@ -1,0 +1,40 @@
+.create-event {
+  padding: 40px 0;
+  &__container {
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__form-done {
+    padding: 20px 0;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__body {
+  }
+}
+
+.create-event {
+  &__form {
+  }
+}
+.create-event-form {
+  display: grid;
+  row-gap: 24px;
+  &__line {
+  }
+
+  &__input {
+  }
+
+  &__bottom {
+  }
+
+  &__submit-button {
+  }
+}
